@@ -1,0 +1,57 @@
+{% extends "_base.html" %}
+{% block body %}
+	<header>
+		<h1>NANONANOBANANO</h1>
+		<h2>A minimum-trust cryptocurrency exchange</h2>
+	</header>
+	<main>
+		<p>
+			This is currently a proof-of-concept of how decentralised a cryptocurrency
+			exchange can be without smart contracts. It is intended to let you trade
+			NANO and BANANO with others while putting as little trust as possible in
+			a third-party, i.e. us.
+		</p>
+		<p>
+			Please do not trade amounts you wouldn't be comfortable losing (at least,
+			not yet), this is first and foremost an experiment.
+		</p>
+		<div class="login-buttons">
+			<button name="nanologin">Login with NANO</button>
+			<button name="bananologin">Login with BANANO</button>
+		</div>
+		<h3>Wait, why do I have to send you money to log in?</h3>
+		<p>
+			Very good question. Take a seat.
+		</p>
+		<p>
+			First of all, we will immediately send any amount you sent to those
+			addresses right back to you.
+		</p>
+		<p>
+			Secondly, we identify you by your wallet address. You do not need a
+			username or password for this site, and you don't need to give us your
+			e-mail address. You are your wallet.
+		</p>
+		<p>
+			The amount we ask you to send is unique to your browser session, so when
+			we receive it, we'll know that you are the owner of that wallet address,
+			and we can log you in.
+		</p>
+		<p>
+			We then automatically send the money back to the address you sent it from,
+			because it's now served its purpose.
+		</p>
+		<h3>Why should I trust you?</h3>
+		<p>
+			You shouldn't. That's the point of decentralisation. To remove the need
+			for a trusted third party. However, because NANO doesn't have smart
+			contracts, an exchange can't be completely decentralised. Instead, we're
+			calling this a "minimum-trust" exchange &ndash; we ask for the absolute
+			minimum amount of trust that is needed to make the whole thing work.
+		</p>
+		<p>
+			Also, we're only asking for fractions of a cent, so if we turn out to be
+			swindlers and run away with your money, you won't be losing much.
+		</p>
+	</main>
+{% endblock body %}

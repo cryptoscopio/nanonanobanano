@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang='en-AU'>
+  <head>
+		<meta charset="utf-8">
+		<meta name="author" content="cryptoscopia">
+		<meta name="description" content="
+			NANONANOBANANO is a minimum-trust exchange for the NANO and BANANO
+			cryptocurrencies. It is as decentralised as the lack of smart contracts
+			will allow.">
+
+		<meta property="og:type" content="website">
+		<meta property="og:site_name" content="NANONANOBANANO">
+		<meta property="og:locale" content="en_AU">
+
+		{% block styles %}
+			<link href="{% static "css/home.css" %}" rel="stylesheet">
+		{% endblock styles%}
+
+		<title>NANONANOBANANO | {% block title %}Home{% endblock %}</title>
+	</head>
+	<body id="{% block body_id %}home{% endblock %}">
+		{% block body %}{% endblock %}
+		{% block scripts %}{% endblock %}
+	</body>
+</html>
